@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pharmacy List</title>
+    </head>
+    <body>
+        <h1>Pharmacy List</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>phone Number</th>
+                </tr>
+            </thead>
+            <tbody>
+              {% for pharmacy in pharmacies%}
+            </tr>
+            <td>{{pharmacy.name}}</td>
+            <td>{{pharmacy.phone_number}}</td>
+            <td>{{pharmacy.address}}</td>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>

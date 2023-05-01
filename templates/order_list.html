@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Order List</title>
+    </head>
+    <body>
+        <h1>Order List</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Customer</th>
+                    <th>Pharmacy</th>
+                    <th>Medicine Name</th>
+                    <th>Date Ordered</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+              {% for order in orders%}
+            </tr>
+            <td>{{order.customer.name}}</td>
+            <td>{{order.pharmacy.name}}</td>
+            <td>{{order.medicine.name}}</td>
+            <td>{{order.quantity}}</td>
+            <td>{{order.date_ordered}}</td>
+        </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

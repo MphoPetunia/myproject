@@ -1,0 +1,25 @@
+{% extends "../base/base.html" %}
+
+{% block content %}
+
+<h1>Welcome to @ your Door Medication Delivery Service</h1>
+@ your door is a local collect and drop-off medication services.
+<p>We understand the importance of reliable and efficient medical delivery services,which is why we have a created
+this platform to provide you with a hassle-free experience.</p>
+        
+{% endblock %}
+{% block navbar%}
+<div class="navbar">
+    <div class="navbar-brand">
+        <a href="#">Medication Delivery Service</a>
+    </div>
+    <div class="navbar-menu">
+        <div class="navbar-end">
+            <div clas="navbar-item">
+                <a href="{% url 'signup'%}">Sign Up</a>
+                <a href ="{% url 'signin'%}">Sign In</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
